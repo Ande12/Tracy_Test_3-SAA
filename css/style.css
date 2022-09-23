@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes bounceAnim {
+  from {
+    top: 200px;
+  }
+  to {
+    top: 300px;
+  }
+}
+
+@keyframes bounceAnim {
+  from {
+    top: 200px;
+  }
+  to {
+    top: 300px;
+  }
+}
+header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/images/mobile/crop-header-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .headContent {
+  height: 100px;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+header .headContent .leftHead {
+  padding-top: 10px;
+}
+header .headContent .leftHead img {
+  width: 200px;
+}
+header .headContent nav ul {
+  display: flex;
+}
+header .headContent nav ul li {
+  list-style: none;
+  margin-left: 60px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 18px;
+  font-family: "Fraunces", serif;
+  line-height: 70px;
+}
+header .headContent nav ul li button {
+  margin-top: -20px;
+  border-radius: 30px;
+  border: none;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 18px;
+  cursor: pointer;
+  padding: 20px 30px;
+  background: rgb(93, 201, 201);
+}
+header .center {
+  width: 50%;
+  margin-left: 30%;
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Barlow", sans-serif;
+  font-size: 40px;
+}
+header .center h1 {
+  padding-bottom: 30px;
+}
+header .center .downArrow {
+  margin-left: 30%;
+  -webkit-animation-name: bounceAnim;
+          animation-name: bounceAnim;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}/*# sourceMappingURL=style.css.map */
